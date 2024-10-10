@@ -1,4 +1,4 @@
-package com.su.cooingplugin
+package com.su.mxvideoplugin
 
 import com.su.basevideopluginframework.BasePluginFactory
 import com.su.mediabox.pluginapi.components.*

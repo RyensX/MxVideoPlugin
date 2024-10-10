@@ -1,4 +1,4 @@
-package com.su.cooingplugin
+package com.su.mxvideoplugin
 
 import android.app.Activity
 import android.os.Bundle

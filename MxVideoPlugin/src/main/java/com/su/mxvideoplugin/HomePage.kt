@@ -1,4 +1,4 @@
-package com.su.cooingplugin
+package com.su.mxvideoplugin
 
 import android.util.Log
 import com.su.basevideopluginframework.framework.HomeFramework

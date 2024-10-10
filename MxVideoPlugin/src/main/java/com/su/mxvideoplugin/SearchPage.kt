@@ -1,4 +1,4 @@
-package com.su.cooingplugin
+package com.su.mxvideoplugin
 
 import com.su.basevideopluginframework.framework.Const
 import com.su.basevideopluginframework.framework.VideoSearchFramework
