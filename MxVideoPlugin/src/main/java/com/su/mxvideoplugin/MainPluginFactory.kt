@@ -21,6 +21,7 @@ class MainPluginFactory : BasePluginFactory() {
             IMediaDetailPageDataComponent::class.java -> DetailPage as T
             IVideoPlayPageDataComponent::class.java -> PlayPage as T
             IMediaSearchPageDataComponent::class.java -> SearchPage as T
+            IMediaUpdateDataComponent::class.java -> MediaUpdateDataComponent as T
             else -> null
         }
 
