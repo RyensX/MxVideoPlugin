@@ -21,7 +21,7 @@ object DetailPage : VideoDetailFramework() {
         var desc = ""
         var cover = ""
         document.getElementsByClass("hl-dc-content").first()?.let { info ->
-            name = info.getElementsByClass("hl-dc-headwrap").first()?.text() ?: ""
+            name = info.getElementsByClass("hl-dc-title hl-data-menu").first()?.text() ?: ""
             desc = info.getElementsByClass("hl-col-xs-12 blurb").first()?.ownText() ?: ""
         }
         document.getElementsByClass("hl-item-thumb hl-lazy")
