@@ -14,7 +14,7 @@ import org.jsoup.nodes.Document
  */
 object SearchPage : VideoSearchFramework() {
 
-    override val searchUrlTemplate: String = "https://www.mxdmp.com/search/%key----------%page---/"
+    override val searchUrlTemplate: String = Const.url("/search/%key----------%page---/")
 
     override suspend fun search(document: Document): List<VideoSearchInfo> {
         val searchResult = mutableListOf<VideoSearchInfo>()
