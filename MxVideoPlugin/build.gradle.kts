@@ -10,8 +10,8 @@ android {
         applicationId = "com.su.mediaboxbaseplugin.mxvideoplugin"
         minSdk = 21
         targetSdk = 31
-        versionCode = 4
-        versionName = "1.3"
+        versionCode = 5
+        versionName = "1.31"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
