@@ -10,7 +10,7 @@ import com.su.mediabox.pluginapi.components.*
  */
 class MainPluginFactory : BasePluginFactory() {
 
-    override val host: String = "https://www.mxdmp.com"
+    override val host: String = "https://www.mxdmv.com"
 
     /**
      * 自动扫描已实现组件进行注册
