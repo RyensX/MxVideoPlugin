@@ -39,4 +39,5 @@ android {
 
 dependencies {
     implementation(project(mapOf("path" to ":BaseVideoPluginFramework")))
+    implementation("junit:junit:4.13.2")
 }

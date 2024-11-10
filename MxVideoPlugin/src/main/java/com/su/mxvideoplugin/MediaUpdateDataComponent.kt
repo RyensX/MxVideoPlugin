@@ -8,7 +8,7 @@ import com.su.mediabox.pluginapi.components.IMediaUpdateDataComponent
 @IPluginFactory.SingletonComponent
 class MediaUpdateDataComponent : IMediaUpdateDataComponent {
 
-    private val updateRegex = Regex("(?<=更新至)(.*)")
+    private val updateRegex = Regex("(?<=更新至)(第?)(.*)")
 
     override suspend fun getUpdateTag(detailUrl: String): String? {
         val doc = JsoupUtil.getDocument(Const.url(detailUrl))
@@ -17,7 +17,7 @@ class MediaUpdateDataComponent : IMediaUpdateDataComponent {
             ?: return null
         return try {
             val rawText = sInfo.text()
-            updateRegex.find(rawText)?.value ?: rawText
+            updateRegex.find(rawText)?.groups?.last()?.value ?: rawText
         } catch (_: Exception) {
             null
         }
