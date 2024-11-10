@@ -17,11 +17,11 @@ class MainPluginFactory : BasePluginFactory() {
      */
     override fun <T : IBasePageDataComponent> createComponent(clazz: Class<T>): T? =
         when (clazz) {
-            IHomePageDataComponent::class.java -> HomePage as T
-            IMediaDetailPageDataComponent::class.java -> DetailPage as T
-            IVideoPlayPageDataComponent::class.java -> PlayPage as T
-            IMediaSearchPageDataComponent::class.java -> SearchPage as T
-            IMediaUpdateDataComponent::class.java -> MediaUpdateDataComponent as T
+            IHomePageDataComponent::class.java -> HomePage() as T
+            IMediaDetailPageDataComponent::class.java -> DetailPage() as T
+            IVideoPlayPageDataComponent::class.java -> PlayPage() as T
+            IMediaSearchPageDataComponent::class.java -> SearchPage() as T
+            IMediaUpdateDataComponent::class.java -> MediaUpdateDataComponent() as T
             else -> null
         }
 

@@ -4,6 +4,7 @@ import android.util.Log
 import com.su.basevideopluginframework.framework.HomeFramework
 import com.su.basevideopluginframework.framework.data.VideoClassifyInfo
 import com.su.basevideopluginframework.framework.data.VideoInfo
+import com.su.mediabox.pluginapi.IPluginFactory
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 
@@ -13,7 +14,8 @@ import org.jsoup.nodes.Element
  * Created by Ryens.
  * https://github.com/RyensX
  */
-object HomePage : HomeFramework() {
+@IPluginFactory.SingletonComponent
+class HomePage : HomeFramework() {
 
     override fun classifyList(doc: Document): List<VideoClassifyInfo> {
         val url = doc.baseUri()

@@ -6,6 +6,7 @@ import com.su.basevideopluginframework.framework.VideoDetailFramework
 import com.su.basevideopluginframework.framework.data.VideoDetailInfo
 import com.su.basevideopluginframework.framework.data.VideoPlayInfo
 import com.su.basevideopluginframework.framework.data.VideoPlayListInfo
+import com.su.mediabox.pluginapi.IPluginFactory
 import org.jsoup.nodes.Document
 
 
@@ -14,7 +15,8 @@ import org.jsoup.nodes.Document
  * Created by Ryens.
  * https://github.com/RyensX
  */
-object DetailPage : VideoDetailFramework() {
+@IPluginFactory.SingletonComponent
+class DetailPage : VideoDetailFramework() {
 
     override fun videoDetail(document: Document): VideoDetailInfo? {
         var name = ""

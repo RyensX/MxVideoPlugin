@@ -12,7 +12,7 @@ import org.jsoup.nodes.Document
  * Created by Ryens.
  * https://github.com/RyensX
  */
-object SearchPage : VideoSearchFramework() {
+class SearchPage : VideoSearchFramework() {
 
     override val searchUrlTemplate: String = Const.url("/search/%key----------%page---/")
 

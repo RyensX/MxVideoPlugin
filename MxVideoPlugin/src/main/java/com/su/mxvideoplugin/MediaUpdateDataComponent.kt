@@ -2,9 +2,11 @@ package com.su.mxvideoplugin
 
 import com.su.basevideopluginframework.framework.Const
 import com.su.basevideopluginframework.util.JsoupUtil
+import com.su.mediabox.pluginapi.IPluginFactory
 import com.su.mediabox.pluginapi.components.IMediaUpdateDataComponent
 
-object MediaUpdateDataComponent : IMediaUpdateDataComponent {
+@IPluginFactory.SingletonComponent
+class MediaUpdateDataComponent : IMediaUpdateDataComponent {
 
     private val updateRegex = Regex("(?<=更新至)(.*)")
 
